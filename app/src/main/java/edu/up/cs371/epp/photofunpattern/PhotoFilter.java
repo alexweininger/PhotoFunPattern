@@ -53,8 +53,6 @@ public abstract class PhotoFilter {
 
         Bitmap newBmp = Bitmap.createBitmap(width, height, inBmp.getConfig());
 
-        Bitmap padded = Bitmap.createBitmap(width + 2, height + 2, inBmp.getConfig());
-
         for (int w = 1; w < width - 1; w++) {
             for (int h = 1; h < height - 1; h++) {
 
