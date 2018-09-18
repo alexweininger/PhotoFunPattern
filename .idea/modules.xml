@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PhotoFunPattern.iml" filepath="$PROJECT_DIR$/PhotoFunPattern.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PhotoFunPattern.iml" filepath="$PROJECT_DIR$/PhotoFunPattern.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PhotoFunPattern.iml" filepath="$PROJECT_DIR$/PhotoFunPattern.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PhotoFunPatternLab4Clean.iml" filepath="$PROJECT_DIR$/PhotoFunPatternLab4Clean.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
