@@ -63,37 +63,57 @@ public class PhotoFun extends AppCompatActivity {
             @Override
             public void onItemSelected (AdapterView<?> adapterView, View view, int pos, long l)
             {
-                BitmapDrawable originalDrawableBmp = (BitmapDrawable) originalImageView.getDrawable();
+
                 adapter.getItem(pos);
                 String item = spinner.getSelectedItem().toString();
 
                 if (item.equals("blank")) {
                     originalImageView.setImageResource(R.drawable.blank);
+                    ImageView originalImageView = (ImageView) findViewById(R.id.originalImage);
+                    BitmapDrawable originalDrawableBmp = (BitmapDrawable) originalImageView.getDrawable();
+
                     myOriginalBmp = originalDrawableBmp.getBitmap();
                 }
                 else if(item.equals("Cheese molds")) {
+                    ImageView originalImageView = (ImageView) findViewById(R.id.originalImage);
+                    BitmapDrawable originalDrawableBmp = (BitmapDrawable) originalImageView.getDrawable();
                     originalImageView.setImageResource(R.drawable.cheese);
                     myOriginalBmp = originalDrawableBmp.getBitmap();
                 }
                 else if(item.equals("Ed C Epp")) {
                     originalImageView.setImageResource(R.drawable.edcepp);
+                    ImageView originalImageView = (ImageView) findViewById(R.id.originalImage);
+                    BitmapDrawable originalDrawableBmp = (BitmapDrawable) originalImageView.getDrawable();
+
                     myOriginalBmp = originalDrawableBmp.getBitmap();
                 }
                 else if(item.equals("Olivia"))
                 {
                     originalImageView.setImageResource(R.drawable.olivia);
+                    ImageView originalImageView = (ImageView) findViewById(R.id.originalImage);
+                    BitmapDrawable originalDrawableBmp = (BitmapDrawable) originalImageView.getDrawable();
+
                     myOriginalBmp = originalDrawableBmp.getBitmap();
                 }
                 else if(item.equals("Noise image of Olivia")) {
                     originalImageView.setImageResource(R.drawable.olivia25noise);
+                    ImageView originalImageView = (ImageView) findViewById(R.id.originalImage);
+                    BitmapDrawable originalDrawableBmp = (BitmapDrawable) originalImageView.getDrawable();
+
                     myOriginalBmp = originalDrawableBmp.getBitmap();
             }
                 else if(item.equals("Olivia Small")) {
                     originalImageView.setImageResource(R.drawable.olivia_small);
+                    ImageView originalImageView = (ImageView) findViewById(R.id.originalImage);
+                    BitmapDrawable originalDrawableBmp = (BitmapDrawable) originalImageView.getDrawable();
+
                     myOriginalBmp = originalDrawableBmp.getBitmap();
             }
                 else if(item.equals("Women in a window")) {
                     originalImageView.setImageResource(R.drawable.two);
+                    ImageView originalImageView = (ImageView) findViewById(R.id.originalImage);
+                    BitmapDrawable originalDrawableBmp = (BitmapDrawable) originalImageView.getDrawable();
+
                     myOriginalBmp = originalDrawableBmp.getBitmap();
             }
 
