@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
         import android.os.Bundle;
         import android.graphics.Bitmap;
         import android.graphics.drawable.BitmapDrawable;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
         import android.widget.Button;
@@ -36,7 +37,7 @@ public class PhotoFun extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_photo_fun);
 
-        ImageView originalImageView =
+        final ImageView originalImageView =
                 (ImageView) findViewById(R.id.originalImage);
         BitmapDrawable originalDrawableBmp =
                 (BitmapDrawable) originalImageView.getDrawable();
@@ -53,10 +54,38 @@ public class PhotoFun extends AppCompatActivity {
                 (new brightnessFilterButtonListener());
 
         // spinner
-        Spinner spinner = (Spinner) findViewById(R.id.image_spinner);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.imageNames, android.R.layout.simple_spinner_item);
+        final Spinner spinner = (Spinner) findViewById(R.id.image_spinner);
+        final ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.imageNames, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
+
+        spinner.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick (AdapterView<?> adapterView, View view, int pos, long l)
+            {
+                adapter.getItem(pos);
+                String item = spinner.getSelectedItem().toString();
+                if (item.equals("blank"))
+                    originalImageView.setImageResource(R.drawable.blank);
+                else if(item.equals("cheese"))
+                    originalImageView.setImageResource(R.drawable.cheese);
+                else if(item.equals("edcepp"))
+                    originalImageView.setImageResource(R.drawable.edcepp);
+                else if(item.equals("olivia"))
+                    originalImageView.setImageResource(R.drawable.olivia);
+                else if(item.equals("olivia25noise"))
+                    originalImageView.setImageResource(R.drawable.olivia25noise);
+                else if(item.equals("olivia_small"))
+                    originalImageView.setImageResource(R.drawable.olivia_small);
+                else if(item.equals("two"))
+                    originalImageView.setImageResource(R.drawable.two);
+
+            }
+            public void onNothingSelected(AdapterView<?> adapterView)
+            {
+
+            }
+        });
 
     }
 
@@ -83,6 +112,8 @@ public class PhotoFun extends AppCompatActivity {
             myNewImageView.setImageBitmap(filter.apply(myOriginalBmp));
         }
     }
+
+
 
 }
 
