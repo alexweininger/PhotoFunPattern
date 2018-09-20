@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="imageIdArray">
+        <item>@drawable/olivia_small</item>
+        <item>@drawable/olivia25noise</item>
+        <item>@drawable/two</item>
+        <item>@drawable/cheese</item>
+        <item>@drawable/edcepp</item>
+    </array>
+
+    <string-array name="imageNames">
+        <item>Olivia</item>
+        <item>Noise image of Olivia</item>
+        <item>Women in a window</item>
+        <item>Cheese molds</item>
+        <item>Ed C Epp</item>
+    </string-array>
+</resources>
