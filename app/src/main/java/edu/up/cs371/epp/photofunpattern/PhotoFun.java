@@ -67,23 +67,23 @@ public class PhotoFun extends AppCompatActivity {
                 String item = spinner.getSelectedItem().toString();
                 if (item.equals("blank"))
                     originalImageView.setImageResource(R.drawable.blank);
-                else if(item.equals("cheese"))
+                else if(item.equals("Cheese molds"))
                     originalImageView.setImageResource(R.drawable.cheese);
-                else if(item.equals("edcepp"))
+                else if(item.equals("Ed C Epp"))
                     originalImageView.setImageResource(R.drawable.edcepp);
-                else if(item.equals("olivia"))
+                else if(item.equals("Olivia"))
                     originalImageView.setImageResource(R.drawable.olivia);
-                else if(item.equals("olivia25noise"))
+                else if(item.equals("Noise image of Olivia"))
                     originalImageView.setImageResource(R.drawable.olivia25noise);
-                else if(item.equals("olivia_small"))
+                else if(item.equals("Olivia Small"))
                     originalImageView.setImageResource(R.drawable.olivia_small);
-                else if(item.equals("two"))
+                else if(item.equals("Women in a window"))
                     originalImageView.setImageResource(R.drawable.two);
 
             }
             public void onNothingSelected(AdapterView<?> adapterView)
             {
-
+                return;
             }
         });
 
