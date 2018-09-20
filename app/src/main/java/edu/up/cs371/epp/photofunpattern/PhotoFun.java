@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
         import android.widget.ImageView;
         import android.widget.Button;
         import android.view.View;
+import android.widget.Spinner;
 
 /**
  *  class PhotoFun controls this photo manipulation app.
@@ -49,6 +50,10 @@ public class PhotoFun extends AppCompatActivity {
                 (Button) findViewById(R.id.brightnessFilterButton);
         brightnessFilterButton.setOnClickListener
                 (new brightnessFilterButtonListener());
+
+
+
+
     }
 
     /*
