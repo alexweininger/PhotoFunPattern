@@ -8,11 +8,16 @@
     tools:context="edu.up.cs371.epp.photofun.PhotoFun"
     android:orientation="vertical">
 
+    <Spinner
+        android:id="@+id/image_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="90">
+        android:layout_weight="90"
+        android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/originalImage"
@@ -20,8 +25,8 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            app:srcCompat="@drawable/olivia_small"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            app:srcCompat="@drawable/olivia_small" />
 
         <ImageView
             android:id="@+id/newImage"
@@ -29,8 +34,8 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            app:srcCompat="@drawable/blank"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            app:srcCompat="@drawable/blank" />
     </LinearLayout>
 
     <LinearLayout
