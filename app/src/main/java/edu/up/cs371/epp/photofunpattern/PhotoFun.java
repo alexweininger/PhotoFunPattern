@@ -63,36 +63,38 @@ public class PhotoFun extends AppCompatActivity {
             @Override
             public void onItemSelected (AdapterView<?> adapterView, View view, int pos, long l)
             {
+                BitmapDrawable originalDrawableBmp = (BitmapDrawable) originalImageView.getDrawable();
                 adapter.getItem(pos);
                 String item = spinner.getSelectedItem().toString();
+
                 if (item.equals("blank")) {
                     originalImageView.setImageResource(R.drawable.blank);
-                    myNewImageView.setImageResource(R.drawable.blank);
+                    myOriginalBmp = originalDrawableBmp.getBitmap();
                 }
                 else if(item.equals("Cheese molds")) {
                     originalImageView.setImageResource(R.drawable.cheese);
-                    myNewImageView.setImageResource(R.drawable.cheese);
+                    myOriginalBmp = originalDrawableBmp.getBitmap();
                 }
                 else if(item.equals("Ed C Epp")) {
                     originalImageView.setImageResource(R.drawable.edcepp);
-                    myNewImageView.setImageResource(R.drawable.edcepp);
+                    myOriginalBmp = originalDrawableBmp.getBitmap();
                 }
                 else if(item.equals("Olivia"))
                 {
-                originalImageView.setImageResource(R.drawable.olivia);
-                myNewImageView.setImageResource(R.drawable.olivia);
+                    originalImageView.setImageResource(R.drawable.olivia);
+                    myOriginalBmp = originalDrawableBmp.getBitmap();
                 }
                 else if(item.equals("Noise image of Olivia")) {
-                originalImageView.setImageResource(R.drawable.olivia25noise);
-                myNewImageView.setImageResource(R.drawable.olivia25noise);
+                    originalImageView.setImageResource(R.drawable.olivia25noise);
+                    myOriginalBmp = originalDrawableBmp.getBitmap();
             }
                 else if(item.equals("Olivia Small")) {
-                originalImageView.setImageResource(R.drawable.olivia_small);
-                myNewImageView.setImageResource(R.drawable.olivia_small);
+                    originalImageView.setImageResource(R.drawable.olivia_small);
+                    myOriginalBmp = originalDrawableBmp.getBitmap();
             }
                 else if(item.equals("Women in a window")) {
-                originalImageView.setImageResource(R.drawable.two);
-                myNewImageView.setImageResource(R.drawable.two);
+                    originalImageView.setImageResource(R.drawable.two);
+                    myOriginalBmp = originalDrawableBmp.getBitmap();
             }
 
             }
