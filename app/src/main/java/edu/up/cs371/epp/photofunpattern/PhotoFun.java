@@ -65,20 +65,35 @@ public class PhotoFun extends AppCompatActivity {
             {
                 adapter.getItem(pos);
                 String item = spinner.getSelectedItem().toString();
-                if (item.equals("blank"))
+                if (item.equals("blank")) {
                     originalImageView.setImageResource(R.drawable.blank);
-                else if(item.equals("Cheese molds"))
+                    myNewImageView.setImageResource(R.drawable.blank);
+                }
+                else if(item.equals("Cheese molds")) {
                     originalImageView.setImageResource(R.drawable.cheese);
-                else if(item.equals("Ed C Epp"))
+                    myNewImageView.setImageResource(R.drawable.cheese);
+                }
+                else if(item.equals("Ed C Epp")) {
                     originalImageView.setImageResource(R.drawable.edcepp);
+                    myNewImageView.setImageResource(R.drawable.edcepp);
+                }
                 else if(item.equals("Olivia"))
-                    originalImageView.setImageResource(R.drawable.olivia);
-                else if(item.equals("Noise image of Olivia"))
-                    originalImageView.setImageResource(R.drawable.olivia25noise);
-                else if(item.equals("Olivia Small"))
-                    originalImageView.setImageResource(R.drawable.olivia_small);
-                else if(item.equals("Women in a window"))
-                    originalImageView.setImageResource(R.drawable.two);
+                {
+                originalImageView.setImageResource(R.drawable.olivia);
+                myNewImageView.setImageResource(R.drawable.olivia);
+                }
+                else if(item.equals("Noise image of Olivia")) {
+                originalImageView.setImageResource(R.drawable.olivia25noise);
+                myNewImageView.setImageResource(R.drawable.olivia25noise);
+            }
+                else if(item.equals("Olivia Small")) {
+                originalImageView.setImageResource(R.drawable.olivia_small);
+                myNewImageView.setImageResource(R.drawable.olivia_small);
+            }
+                else if(item.equals("Women in a window")) {
+                originalImageView.setImageResource(R.drawable.two);
+                myNewImageView.setImageResource(R.drawable.two);
+            }
 
             }
 
