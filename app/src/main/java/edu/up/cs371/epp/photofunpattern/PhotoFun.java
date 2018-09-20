@@ -59,9 +59,9 @@ public class PhotoFun extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
 
-        spinner.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemClick (AdapterView<?> adapterView, View view, int pos, long l)
+            public void onItemSelected (AdapterView<?> adapterView, View view, int pos, long l)
             {
                 adapter.getItem(pos);
                 String item = spinner.getSelectedItem().toString();
@@ -81,9 +81,10 @@ public class PhotoFun extends AppCompatActivity {
                     originalImageView.setImageResource(R.drawable.two);
 
             }
-            public void onNothingSelected(AdapterView<?> adapterView)
-            {
-                return;
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
             }
         });
 
