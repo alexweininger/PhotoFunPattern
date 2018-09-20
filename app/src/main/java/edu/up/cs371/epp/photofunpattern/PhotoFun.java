@@ -4,7 +4,8 @@ import android.support.v7.app.AppCompatActivity;
         import android.os.Bundle;
         import android.graphics.Bitmap;
         import android.graphics.drawable.BitmapDrawable;
-        import android.widget.ImageView;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
         import android.widget.Button;
         import android.view.View;
 import android.widget.Spinner;
@@ -51,6 +52,10 @@ public class PhotoFun extends AppCompatActivity {
         brightnessFilterButton.setOnClickListener
                 (new brightnessFilterButtonListener());
         Spinner spinner = (Spinner) findViewById(R.id.image_spinner);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.imagesNames, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+
     }
 
     /*
