@@ -45,10 +45,10 @@ public class PhotoFun extends AppCompatActivity {
         myNewImageView = (ImageView) findViewById(R.id.newImage);
 
         Button grayFilterButton =
-                (Button) findViewById(R.id.grayFilterButton);
+                (Button) findViewById(R.id.smoothFilterButton);
         grayFilterButton.setOnClickListener(new grayFilterButtonListener());
         Button brightnessFilterButton =
-                (Button) findViewById(R.id.brightnessFilterButton);
+                (Button) findViewById(R.id.westEdgeFilterButton);
         brightnessFilterButton.setOnClickListener
                 (new brightnessFilterButtonListener());
 
@@ -79,7 +79,7 @@ public class PhotoFun extends AppCompatActivity {
     private class brightnessFilterButtonListener
             implements View.OnClickListener {
         public void onClick(View button) {
-            BrightnessFilter filter = new BrightnessFilter();
+            WestEdgeFilter filter = new WestEdgeFilter();
             myNewImageView.setImageBitmap(filter.apply(myOriginalBmp));
         }
     }

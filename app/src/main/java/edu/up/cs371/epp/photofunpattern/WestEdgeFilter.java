@@ -12,7 +12,7 @@ import android.graphics.Color;
  *  https://github.com/edcepp/PhotoFunPattern
  */
 
-public class BrightnessFilter extends PhotoFilter {
+public class WestEdgeFilter extends PhotoFilter {
 
     private final int ADJUSTMENT = 100;
 

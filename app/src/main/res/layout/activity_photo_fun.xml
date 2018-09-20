@@ -50,11 +50,11 @@
             android:layout_weight="2" />
 
         <Button
-            android:text="Gray Filter"
+            android:id="@+id/smoothFilterButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:id="@+id/grayFilterButton"
             android:layout_weight="3"
+            android:text="Smooth Filter"
             android:textSize="18sp" />
 
         <Space
@@ -63,11 +63,11 @@
             android:layout_weight="0.2" />
 
         <Button
-            android:text="Brightness Filter"
+            android:id="@+id/westEdgeFilterButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:id="@+id/brightnessFilterButton"
             android:layout_weight="3"
+            android:text="West Edge Filter"
             android:textSize="18sp" />
 
         <Space
